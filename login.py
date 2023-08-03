@@ -11,10 +11,13 @@ driver.maximize_window()
 time.sleep(1)
 
 user = driver.find_element(By.ID, 'username')
+user.clear()
 user.send_keys("rahulshettyacademy")
+
 time.sleep(1)
 
 password = driver.find_element(By.ID, 'password')
+password.clear()
 password.send_keys("learning")
 
 btn = driver.find_element(By.ID, 'signInBtn')
